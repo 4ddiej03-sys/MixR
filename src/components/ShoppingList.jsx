@@ -39,7 +39,7 @@ export default function ShoppingList({ items, setItems }) {
           placeholder="Add item…"
           style={{ flex: 1, padding: "10px 14px", borderRadius: 10, border: "1px solid #333", background: "#111", color: "#f0ebe3", fontSize: 14, outline: "none", fontFamily: "inherit" }} />
         <button type="button" onClick={addItem}
-          style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 700, cursor: "pointer" }}>+</button>
+          style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: "#2563eb", color: "#fff", fontWeight: 700, cursor: "pointer" }}>+</button>
       </div>
 
       {items.length === 0 ? (

@@ -33,10 +33,10 @@ export default function MakingMode({ drink, onExit }) {
       <div style={{ padding: "12px 20px", borderBottom: "1px solid rgba(45,106,79,0.2)" }}>
         <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
           <span style={{ fontSize: 12, color: "#718096" }}>Step {step + 1} of {steps.length}</span>
-          <span style={{ fontSize: 12, color: "#2d6a4f", fontWeight: 600 }}>{progress}%</span>
+          <span style={{ fontSize: 12, color: "#2563eb", fontWeight: 600 }}>{progress}%</span>
         </div>
         <div style={{ height: 4, background: "rgba(255,255,255,0.1)", borderRadius: 2, overflow: "hidden" }}>
-          <div style={{ height: "100%", width: `${progress}%`, background: "#2d6a4f", borderRadius: 2, transition: "width 0.3s" }} />
+          <div style={{ height: "100%", width: `${progress}%`, background: "#2563eb", borderRadius: 2, transition: "width 0.3s" }} />
         </div>
       </div>
 
@@ -47,7 +47,7 @@ export default function MakingMode({ drink, onExit }) {
             <h3 style={{ fontSize: 14, color: "#718096", fontWeight: 600, marginBottom: 12, textTransform: "uppercase", letterSpacing: 1 }}>Gather your ingredients</h3>
             {(drink.ingredients || []).map((ing, i) => (
               <button key={i} type="button" onClick={() => toggleCheck(ing)}
-                style={{ width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${checked.includes(ing) ? "#2d6a4f" : "rgba(255,255,255,0.1)"}`, background: checked.includes(ing) ? "rgba(45,106,79,0.2)" : "transparent", marginBottom: 6, textAlign: "left", color: checked.includes(ing) ? "#2d6a4f" : "#f0ebe3", fontSize: 14, display: "flex", alignItems: "center", gap: 10 }}>
+                style={{ width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${checked.includes(ing) ? "#2563eb" : "rgba(255,255,255,0.1)"}`, background: checked.includes(ing) ? "rgba(45,106,79,0.2)" : "transparent", marginBottom: 6, textAlign: "left", color: checked.includes(ing) ? "#2563eb" : "#f0ebe3", fontSize: 14, display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ fontSize: 16 }}>{checked.includes(ing) ? "✅" : "⬜"}</span>
                 {ing}
               </button>
@@ -78,12 +78,12 @@ export default function MakingMode({ drink, onExit }) {
       <div style={{ padding: "16px 20px", borderTop: "1px solid rgba(45,106,79,0.2)", display: "flex", gap: 10 }}>
         {step > 0 && (
           <button type="button" onClick={() => setStep(s => s - 1)}
-            style={{ flex: 1, padding: 14, borderRadius: 12, border: "1px solid rgba(45,106,79,0.3)", background: "transparent", color: "#2d6a4f", fontWeight: 700, fontSize: 15 }}>
+            style={{ flex: 1, padding: 14, borderRadius: 12, border: "1px solid rgba(45,106,79,0.3)", background: "transparent", color: "#2563eb", fontWeight: 700, fontSize: 15 }}>
             ← Back
           </button>
         )}
         <button type="button" onClick={() => isLast ? onExit() : setStep(s => s + 1)}
-          style={{ flex: 2, padding: 14, borderRadius: 12, border: "none", background: isLast ? "#2d6a4f" : "#2d6a4f", color: "#fff", fontWeight: 700, fontSize: 15, boxShadow: "0 4px 12px rgba(45,106,79,0.3)" }}>
+          style={{ flex: 2, padding: 14, borderRadius: 12, border: "none", background: isLast ? "#2563eb" : "#2563eb", color: "#fff", fontWeight: 700, fontSize: 15, boxShadow: "0 4px 12px rgba(45,106,79,0.3)" }}>
           {isLast ? "🍹 Cheers! Done" : "Next Step →"}
         </button>
       </div>

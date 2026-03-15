@@ -71,7 +71,7 @@ If you cannot extract a recipe, return: {"error": "Could not extract recipe from
         )}
 
         <button type="button" onClick={handleImport} disabled={loading || !url.trim()}
-          style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: loading ? "#1a4a38" : "#2d6a4f", color: "#fff", fontWeight: 700, fontSize: 16, cursor: loading || !url.trim() ? "not-allowed" : "pointer" }}>
+          style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: loading ? "#1a3a6b" : "#2563eb", color: "#fff", fontWeight: 700, fontSize: 16, cursor: loading || !url.trim() ? "not-allowed" : "pointer" }}>
           {loading ? "⏳ Importing…" : "🔗 Import Drink"}
         </button>
       </div>

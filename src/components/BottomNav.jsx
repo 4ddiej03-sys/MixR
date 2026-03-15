@@ -13,7 +13,7 @@ export default function BottomNav({ tab, setTab }) {
         <button key={t.id} type="button" onClick={() => setTab(t.id)}
           style={{ flex: 1, padding: "10px 0", border: "none", background: "none", display: "flex", flexDirection: "column", alignItems: "center", gap: 2, cursor: "pointer" }}>
           <span style={{ fontSize: 20 }}>{t.icon}</span>
-          <span style={{ fontSize: 10, fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? "#2d6a4f" : "#718096" }}>{t.label}</span>
+          <span style={{ fontSize: 10, fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? "#2563eb" : "#718096" }}>{t.label}</span>
         </button>
       ))}
     </nav>

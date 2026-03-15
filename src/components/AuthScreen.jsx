@@ -27,7 +27,7 @@ const PRICING = [
     sub: "NZD/month",
     detail: "Unlimited AI · Full access",
     color: "rgba(45,106,79,0.3)",
-    textColor: "#2d6a4f",
+    textColor: "#2563eb",
     highlight: false,
   },
   {
@@ -36,7 +36,7 @@ const PRICING = [
     sub: "NZD/month",
     detail: "Che AF + Mix-R · Best value",
     color: "rgba(45,106,79,0.15)",
-    textColor: "#2d6a4f",
+    textColor: "#2563eb",
     highlight: true,
     badge: "BEST VALUE",
   },
@@ -85,7 +85,7 @@ export default function AuthScreen({ onAuth }) {
           <div style={{ display: "flex", background: "#111", borderRadius: 12, padding: 4, marginBottom: 24 }}>
             {["signin", "signup"].map(m => (
               <button key={m} type="button" onClick={() => { setMode(m); setError(""); setSuccess(""); }}
-                style={{ flex: 1, padding: "10px 0", borderRadius: 10, border: "none", background: mode === m ? "#2d6a4f" : "transparent", fontWeight: mode === m ? 700 : 500, fontSize: 14, cursor: "pointer", color: mode === m ? "#fff" : "#718096", transition: "all 0.2s" }}>
+                style={{ flex: 1, padding: "10px 0", borderRadius: 10, border: "none", background: mode === m ? "#2563eb" : "transparent", fontWeight: mode === m ? 700 : 500, fontSize: 14, cursor: "pointer", color: mode === m ? "#fff" : "#718096", transition: "all 0.2s" }}>
                 {m === "signin" ? "Sign In" : "Create Account"}
               </button>
             ))}
@@ -109,12 +109,12 @@ export default function AuthScreen({ onAuth }) {
 
           {mode === "signup" && (
             <p style={{ fontSize: 11, color: "#718096", textAlign: "center", marginBottom: 12 }}>
-              By signing up you agree to our <span style={{ color: "#2d6a4f", cursor: "pointer" }}>Terms of Service</span> and <span style={{ color: "#2d6a4f", cursor: "pointer" }}>Privacy Policy</span>
+              By signing up you agree to our <span style={{ color: "#2563eb", cursor: "pointer" }}>Terms of Service</span> and <span style={{ color: "#2563eb", cursor: "pointer" }}>Privacy Policy</span>
             </p>
           )}
 
           <button type="button" onClick={handleSubmit} disabled={loading}
-            style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: loading ? "#1a4a38" : "#2d6a4f", color: "#fff", fontWeight: 700, fontSize: 16, cursor: loading ? "not-allowed" : "pointer" }}>
+            style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: loading ? "#1a3a6b" : "#2563eb", color: "#fff", fontWeight: 700, fontSize: 16, cursor: loading ? "not-allowed" : "pointer" }}>
             {loading ? "Please wait…" : mode === "signin" ? "Sign In →" : "Create Account →"}
           </button>
         </div>
@@ -144,7 +144,7 @@ export default function AuthScreen({ onAuth }) {
             {PRICING.map((p, i) => (
               <div key={i} style={{ background: p.color, border: `1px solid ${p.textColor}`, borderRadius: 12, padding: "14px 16px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "relative" }}>
                 {p.badge && (
-                  <div style={{ position: "absolute", top: -10, right: 12, background: "#2d6a4f", padding: "2px 10px", borderRadius: 50, fontSize: 10, fontWeight: 700, color: "#fff" }}>
+                  <div style={{ position: "absolute", top: -10, right: 12, background: "#2563eb", padding: "2px 10px", borderRadius: 50, fontSize: 10, fontWeight: 700, color: "#fff" }}>
                     {p.badge}
                   </div>
                 )}

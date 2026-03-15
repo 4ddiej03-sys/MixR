@@ -12,7 +12,7 @@ export default function SettingsScreen({ user, settings, onUpdateSettings, onSig
         {desc && <p style={{ margin: "2px 0 0", fontSize: 12, color: "#718096" }}>{desc}</p>}
       </div>
       <button type="button" onClick={() => toggle(k)}
-        style={{ width: 48, height: 28, borderRadius: 14, border: "none", background: settings[k] ? "#2d6a4f" : "#333", cursor: "pointer", position: "relative", transition: "background 0.2s", flexShrink: 0 }}>
+        style={{ width: 48, height: 28, borderRadius: 14, border: "none", background: settings[k] ? "#2563eb" : "#333", cursor: "pointer", position: "relative", transition: "background 0.2s", flexShrink: 0 }}>
         <div style={{ position: "absolute", top: 3, left: settings[k] ? 23 : 3, width: 22, height: 22, borderRadius: "50%", background: "#fff", transition: "left 0.2s" }} />
       </button>
     </div>
@@ -29,11 +29,11 @@ export default function SettingsScreen({ user, settings, onUpdateSettings, onSig
           <p style={{ margin: "4px 0 0", fontSize: 14, color: "#f0ebe3" }}>{user?.email}</p>
         </div>
         <div style={{ padding: "14px 0" }}>
-          {isFounder && <span style={{ fontSize: 12, background: "#0d2818", color: "#2d6a4f", padding: "3px 8px", borderRadius: 50, fontWeight: 700, marginRight: 8 }}>👑 Founder</span>}
-          {isPro && !isFounder && <span style={{ fontSize: 12, background: "#2d6a4f", color: "#fff", padding: "3px 8px", borderRadius: 50, fontWeight: 700, marginRight: 8 }}>⭐ Pro</span>}
+          {isFounder && <span style={{ fontSize: 12, background: "#0d1a3a", color: "#2563eb", padding: "3px 8px", borderRadius: 50, fontWeight: 700, marginRight: 8 }}>👑 Founder</span>}
+          {isPro && !isFounder && <span style={{ fontSize: 12, background: "#2563eb", color: "#fff", padding: "3px 8px", borderRadius: 50, fontWeight: 700, marginRight: 8 }}>⭐ Pro</span>}
           {!isPro && !isFounder && (
             <button type="button" onClick={onUpgrade}
-              style={{ fontSize: 12, background: "rgba(45,106,79,0.2)", border: "1px solid rgba(45,106,79,0.4)", color: "#2d6a4f", padding: "4px 12px", borderRadius: 50, cursor: "pointer", fontWeight: 600 }}>
+              style={{ fontSize: 12, background: "rgba(45,106,79,0.2)", border: "1px solid rgba(45,106,79,0.4)", color: "#2563eb", padding: "4px 12px", borderRadius: 50, cursor: "pointer", fontWeight: 600 }}>
               Upgrade to Pro
             </button>
           )}

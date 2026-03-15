@@ -125,7 +125,7 @@ export default function NewDrinkModal({ onClose, onSave }) {
             </div>
           ))}
           <button type="button" onClick={() => setIngredients([...ingredients, ""])}
-            style={{ fontSize: 13, color: "#2d6a4f", background: "none", border: "1px dashed rgba(45,106,79,0.4)", borderRadius: 8, padding: "8px 14px", cursor: "pointer", width: "100%" }}>
+            style={{ fontSize: 13, color: "#2563eb", background: "none", border: "1px dashed rgba(45,106,79,0.4)", borderRadius: 8, padding: "8px 14px", cursor: "pointer", width: "100%" }}>
             + Add ingredient
           </button>
         </div>
@@ -146,13 +146,13 @@ export default function NewDrinkModal({ onClose, onSave }) {
             </div>
           ))}
           <button type="button" onClick={() => setSteps([...steps, ""])}
-            style={{ fontSize: 13, color: "#2d6a4f", background: "none", border: "1px dashed rgba(45,106,79,0.4)", borderRadius: 8, padding: "8px 14px", cursor: "pointer", width: "100%" }}>
+            style={{ fontSize: 13, color: "#2563eb", background: "none", border: "1px dashed rgba(45,106,79,0.4)", borderRadius: 8, padding: "8px 14px", cursor: "pointer", width: "100%" }}>
             + Add step
           </button>
         </div>
 
         <button type="button" onClick={handleSave} disabled={!title.trim()}
-          style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: title.trim() ? "#2d6a4f" : "#333", color: "#fff", fontWeight: 700, fontSize: 16, cursor: title.trim() ? "pointer" : "not-allowed", boxShadow: title.trim() ? "0 4px 12px rgba(45,106,79,0.3)" : "none" }}>
+          style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: title.trim() ? "#2563eb" : "#333", color: "#fff", fontWeight: 700, fontSize: 16, cursor: title.trim() ? "pointer" : "not-allowed", boxShadow: title.trim() ? "0 4px 12px rgba(45,106,79,0.3)" : "none" }}>
           🍹 Save Drink
         </button>
       </div>

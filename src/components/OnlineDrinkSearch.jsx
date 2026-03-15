@@ -91,7 +91,7 @@ Reply ONLY with valid JSON (no markdown):
             placeholder="Search any drink or culture…"
             style={{ flex: 1, padding: "10px 14px", borderRadius: 10, border: "1px solid #333", background: "#111", color: "#f0ebe3", fontSize: 14, outline: "none", fontFamily: "inherit" }} />
           <button type="button" onClick={() => handleSearch()} disabled={loading}
-            style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 700, cursor: loading ? "not-allowed" : "pointer" }}>
+            style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: "#2563eb", color: "#fff", fontWeight: 700, cursor: loading ? "not-allowed" : "pointer" }}>
             {loading ? "…" : "🔍"}
           </button>
         </div>
@@ -116,7 +116,7 @@ Reply ONLY with valid JSON (no markdown):
         {/* Loading */}
         {loading && (
           <div style={{ textAlign: "center", padding: "32px 0" }}>
-            <div style={{ width: 36, height: 36, border: "3px solid #333", borderTopColor: "#2d6a4f", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 12px" }} />
+            <div style={{ width: 36, height: 36, border: "3px solid #333", borderTopColor: "#2563eb", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 12px" }} />
             <p style={{ color: "#718096", fontSize: 14 }}>🌍 Finding authentic recipes…</p>
             <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
           </div>
@@ -131,18 +131,18 @@ Reply ONLY with valid JSON (no markdown):
 
         {/* Results */}
         {results.map((drink, i) => (
-          <div key={i} style={{ background: "#0d2818", border: "1px solid rgba(45,106,79,0.3)", borderRadius: 14, padding: 16, marginBottom: 12 }}>
+          <div key={i} style={{ background: "#0d1a3a", border: "1px solid rgba(45,106,79,0.3)", borderRadius: 14, padding: 16, marginBottom: 12 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
               <div style={{ flex: 1 }}>
                 <h4 style={{ margin: "0 0 4px", fontSize: 15, color: "#f0ebe3" }}>{drink.title}</h4>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                   {drink.origin && <span style={{ fontSize: 11, color: "#718096" }}>🌍 {drink.origin}</span>}
                   {drink.prepTime && <span style={{ fontSize: 11, color: "#718096" }}>⏱ {drink.prepTime}</span>}
-                  {!drink.alcoholic && <span style={{ fontSize: 11, color: "#2d6a4f" }}>🌿 Non-alc</span>}
+                  {!drink.alcoholic && <span style={{ fontSize: 11, color: "#2563eb" }}>🌿 Non-alc</span>}
                 </div>
               </div>
               <button type="button" onClick={() => { onSaveDrink(drink); onClose(); }}
-                style={{ padding: "8px 14px", borderRadius: 8, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 600, fontSize: 13, cursor: "pointer", whiteSpace: "nowrap", marginLeft: 8 }}>
+                style={{ padding: "8px 14px", borderRadius: 8, border: "none", background: "#2563eb", color: "#fff", fontWeight: 600, fontSize: 13, cursor: "pointer", whiteSpace: "nowrap", marginLeft: 8 }}>
                 + Save
               </button>
             </div>

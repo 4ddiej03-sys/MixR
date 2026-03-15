@@ -49,11 +49,11 @@ export default function ShelfScanner({ onAddItems, onClose }) {
             </p>
             <div style={{ display: "flex", gap: 10 }}>
               <button type="button" onClick={() => { fileRef.current.capture = "environment"; fileRef.current.click(); }}
-                style={{ flex: 1, padding: 14, borderRadius: 12, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 700, fontSize: 15, cursor: "pointer" }}>
+                style={{ flex: 1, padding: 14, borderRadius: 12, border: "none", background: "#2563eb", color: "#fff", fontWeight: 700, fontSize: 15, cursor: "pointer" }}>
                 📷 Take Photo
               </button>
               <button type="button" onClick={() => { fileRef.current.removeAttribute("capture"); fileRef.current.click(); }}
-                style={{ flex: 1, padding: 14, borderRadius: 12, border: "1px solid rgba(45,106,79,0.4)", background: "transparent", color: "#2d6a4f", fontWeight: 700, fontSize: 15, cursor: "pointer" }}>
+                style={{ flex: 1, padding: 14, borderRadius: 12, border: "1px solid rgba(45,106,79,0.4)", background: "transparent", color: "#2563eb", fontWeight: 700, fontSize: 15, cursor: "pointer" }}>
                 🖼 Upload
               </button>
             </div>
@@ -63,7 +63,7 @@ export default function ShelfScanner({ onAddItems, onClose }) {
 
         {scanning && (
           <div style={{ textAlign: "center", padding: "32px 0" }}>
-            <div style={{ width: 40, height: 40, border: "3px solid #333", borderTopColor: "#2d6a4f", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 16px" }} />
+            <div style={{ width: 40, height: 40, border: "3px solid #333", borderTopColor: "#2563eb", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 16px" }} />
             <p style={{ color: "#718096", fontSize: 14 }}>🍶 Identifying bottles and mixers…</p>
             <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
           </div>
@@ -83,13 +83,13 @@ export default function ShelfScanner({ onAddItems, onClose }) {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
               {results.items.map((item, i) => (
                 <button key={i} type="button" onClick={() => toggle(item)}
-                  style={{ padding: "8px 14px", borderRadius: 50, border: `1px solid ${selected.includes(item) ? "#2d6a4f" : "#333"}`, background: selected.includes(item) ? "rgba(45,106,79,0.2)" : "transparent", color: selected.includes(item) ? "#2d6a4f" : "#718096", fontSize: 13, cursor: "pointer", fontWeight: selected.includes(item) ? 600 : 400 }}>
+                  style={{ padding: "8px 14px", borderRadius: 50, border: `1px solid ${selected.includes(item) ? "#2563eb" : "#333"}`, background: selected.includes(item) ? "rgba(45,106,79,0.2)" : "transparent", color: selected.includes(item) ? "#2563eb" : "#718096", fontSize: 13, cursor: "pointer", fontWeight: selected.includes(item) ? 600 : 400 }}>
                   {selected.includes(item) ? "✓ " : ""}{item}
                 </button>
               ))}
             </div>
             <button type="button" onClick={handleAdd} disabled={!selected.length}
-              style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: selected.length ? "#2d6a4f" : "#333", color: "#fff", fontWeight: 700, fontSize: 15, cursor: selected.length ? "pointer" : "not-allowed" }}>
+              style={{ width: "100%", padding: 14, borderRadius: 12, border: "none", background: selected.length ? "#2563eb" : "#333", color: "#fff", fontWeight: 700, fontSize: 15, cursor: selected.length ? "pointer" : "not-allowed" }}>
               + Add {selected.length} items to shelf
             </button>
           </>

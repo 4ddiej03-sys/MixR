@@ -163,7 +163,7 @@ export default function App() {
     <div style={{ minHeight: "100vh", background: "#0d0d0d", display: "flex", alignItems: "center", justifyContent: "center" }}>
       <div style={{ textAlign: "center" }}>
         <div style={{ fontSize: 64, marginBottom: 16 }}>🍹</div>
-        <div style={{ width: 36, height: 36, border: "3px solid #333", borderTopColor: "#2d6a4f", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto" }} />
+        <div style={{ width: 36, height: 36, border: "3px solid #333", borderTopColor: "#2563eb", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto" }} />
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
     </div>
@@ -206,9 +206,9 @@ export default function App() {
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            {aiLoading && <span style={{ fontSize: 13, color: "#2d6a4f" }}>🤖 Mixing…</span>}
-            {isFounder && <span style={{ fontSize: 11, background: "#0d2818", color: "#2d6a4f", padding: "3px 8px", borderRadius: 50, fontWeight: 700 }}>👑 Founder</span>}
-            {isPro && !isFounder && <span style={{ fontSize: 11, background: "#2d6a4f", color: "#fff", padding: "3px 8px", borderRadius: 50, fontWeight: 700 }}>⭐ Pro</span>}
+            {aiLoading && <span style={{ fontSize: 13, color: "#2563eb" }}>🤖 Mixing…</span>}
+            {isFounder && <span style={{ fontSize: 11, background: "#0d1a3a", color: "#2563eb", padding: "3px 8px", borderRadius: 50, fontWeight: 700 }}>👑 Founder</span>}
+            {isPro && !isFounder && <span style={{ fontSize: 11, background: "#2563eb", color: "#fff", padding: "3px 8px", borderRadius: 50, fontWeight: 700 }}>⭐ Pro</span>}
             {!isPro && !isFounder && (
               <span style={{ fontSize: 11, background: "#1a1a1a", border: "1px solid #333", color: "#718096", padding: "3px 8px", borderRadius: 50 }}>
                 {callsLeft} AI left
@@ -226,11 +226,11 @@ export default function App() {
           <>
             <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
               <button type="button" onClick={() => setShowNewDrink(true)} style={btn("#1a3a5c")}>➕ New</button>
-              <button type="button" onClick={() => setShowImport(true)} style={btn("#1a3a2a")}>🔗 Import</button>
+              <button type="button" onClick={() => setShowImport(true)} style={btn("#1a2a4a")}>🔗 Import</button>
             </div>
             <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
               <button type="button" onClick={generateDrink} disabled={aiLoading}
-                style={btn(aiLoading ? "#1a4a38" : "#2d6a4f")}>🤖 AI Mix</button>
+                style={btn(aiLoading ? "#1a3a6b" : "#2563eb")}>🤖 AI Mix</button>
               <button type="button" onClick={bestShelfMatch} style={btn("#3a2d1a")}>🍹 Best</button>
               <button type="button" onClick={() => setShowOnlineSearch(true)} style={btn("#2d1a3a")}>🌍 Search</button>
             </div>
@@ -257,7 +257,7 @@ export default function App() {
             <div style={{ display: "flex", gap: 6, overflowX: "auto", marginBottom: 16, paddingBottom: 4 }}>
               {CATEGORIES.map(c => (
                 <button key={c} type="button" onClick={() => setFilterCat(c)}
-                  style={{ padding: "6px 12px", borderRadius: 50, border: `1px solid ${filterCat === c ? "#2d6a4f" : "#333"}`, background: filterCat === c ? "rgba(45,106,79,0.2)" : "transparent", color: filterCat === c ? "#2d6a4f" : "#718096", fontSize: 12, fontWeight: filterCat === c ? 700 : 400, whiteSpace: "nowrap", cursor: "pointer" }}>
+                  style={{ padding: "6px 12px", borderRadius: 50, border: `1px solid ${filterCat === c ? "#2563eb" : "#333"}`, background: filterCat === c ? "rgba(45,106,79,0.2)" : "transparent", color: filterCat === c ? "#2563eb" : "#718096", fontSize: 12, fontWeight: filterCat === c ? 700 : 400, whiteSpace: "nowrap", cursor: "pointer" }}>
                   {c}
                 </button>
               ))}

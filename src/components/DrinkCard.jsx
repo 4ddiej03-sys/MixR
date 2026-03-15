@@ -3,7 +3,7 @@ import { useState } from "react";
 import { getMissingIngredients, ingredientOnShelf, getShelfNames, calcMatchPct } from "../utils/shelfMatch";
 
 const CATEGORY_COLORS = {
-  Cocktail:    { bg: "#0d2818", border: "#2d6a4f", badge: "#2d6a4f" },
+  Cocktail:    { bg: "#0d1a3a", border: "#2563eb", badge: "#2563eb" },
   Mocktail:    { bg: "#1a1a0d", border: "#6a6a2d", badge: "#8a8a3d" },
   Traditional: { bg: "#1a0d0d", border: "#6a2d2d", badge: "#8a4d3d" },
   Shot:        { bg: "#1a0d1a", border: "#6a2d6a", badge: "#8a4d8a" },
@@ -43,7 +43,7 @@ export default function DrinkCard({
             <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 <div style={{ height: 4, width: 60, background: "rgba(255,255,255,0.1)", borderRadius: 2, overflow: "hidden" }}>
-                  <div style={{ height: "100%", width: `${matchPct}%`, borderRadius: 2, background: matchPct === 100 ? "#2d6a4f" : matchPct >= 50 ? "#6a6a2d" : "#6a2d2d" }} />
+                  <div style={{ height: "100%", width: `${matchPct}%`, borderRadius: 2, background: matchPct === 100 ? "#2563eb" : matchPct >= 50 ? "#6a6a2d" : "#6a2d2d" }} />
                 </div>
                 <span style={{ fontSize: 11, color: "#718096" }}>{matchPct}% {matchPct === 100 && "🎉"}</span>
               </div>
@@ -64,7 +64,7 @@ export default function DrinkCard({
 
         {/* Expand */}
         <button type="button" onClick={() => setExpanded(v => !v)}
-          style={{ background: "none", border: "none", color: "#2d6a4f", fontSize: 13, cursor: "pointer", padding: "4px 0" }}>
+          style={{ background: "none", border: "none", color: "#2563eb", fontSize: 13, cursor: "pointer", padding: "4px 0" }}>
           {expanded ? "▲ Hide" : "▼ Show"} ingredients ({drink.ingredients?.length || 0})
         </button>
 
@@ -73,7 +73,7 @@ export default function DrinkCard({
             <ul style={{ paddingLeft: 16, margin: "0 0 8px", fontSize: 13 }}>
               {(drink.ingredients || []).map((ing, i) => {
                 const have = ingredientOnShelf(ing, shelfNames);
-                return <li key={i} style={{ color: have ? "#2d6a4f" : "#e53e3e", marginBottom: 2 }}>{have ? "✓" : "✗"} {ing}</li>;
+                return <li key={i} style={{ color: have ? "#2563eb" : "#e53e3e", marginBottom: 2 }}>{have ? "✓" : "✗"} {ing}</li>;
               })}
             </ul>
             {drink.glassware && <p style={{ fontSize: 12, color: "#718096", marginBottom: 4 }}>🥃 Glassware: {drink.glassware}</p>}
@@ -89,9 +89,9 @@ export default function DrinkCard({
         {/* Actions */}
         <div style={{ display: "flex", gap: 6, marginTop: 10, flexWrap: "wrap" }}>
           <button type="button" onClick={() => onMakeDrink(drink)}
-            style={{ flex: 1, padding: "8px 10px", borderRadius: 8, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 600, cursor: "pointer", fontSize: 13 }}>🍹 Make It</button>
+            style={{ flex: 1, padding: "8px 10px", borderRadius: 8, border: "none", background: "#2563eb", color: "#fff", fontWeight: 600, cursor: "pointer", fontSize: 13 }}>🍹 Make It</button>
           <button type="button" onClick={() => onAddToShopping(missing.length ? missing : drink.ingredients)}
-            style={{ flex: 1, padding: "8px 10px", borderRadius: 8, border: "1px solid rgba(45,106,79,0.4)", background: "transparent", color: "#2d6a4f", fontWeight: 600, cursor: "pointer", fontSize: 13 }}>
+            style={{ flex: 1, padding: "8px 10px", borderRadius: 8, border: "1px solid rgba(45,106,79,0.4)", background: "transparent", color: "#2563eb", fontWeight: 600, cursor: "pointer", fontSize: 13 }}>
             🛒 {missing.length ? `Add ${missing.length} missing` : "Add all"}
           </button>
           <button type="button" onClick={handleDelete}

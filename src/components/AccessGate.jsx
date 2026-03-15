@@ -45,18 +45,18 @@ export default function AccessGate({ user, onGetAccess, onSignOut }) {
             <p style={{ margin: 0, fontSize: 11, color: "#718096" }}>NZD/month</p>
           </div>
           <div style={{ background: "rgba(45,106,79,0.1)", border: "1px solid rgba(45,106,79,0.4)", borderRadius: 14, padding: 16, textAlign: "center", position: "relative" }}>
-            <div style={{ position: "absolute", top: -10, left: "50%", transform: "translateX(-50%)", background: "#2d6a4f", padding: "2px 10px", borderRadius: 50, fontSize: 10, fontWeight: 700, color: "#fff", whiteSpace: "nowrap" }}>
+            <div style={{ position: "absolute", top: -10, left: "50%", transform: "translateX(-50%)", background: "#2563eb", padding: "2px 10px", borderRadius: 50, fontSize: 10, fontWeight: 700, color: "#fff", whiteSpace: "nowrap" }}>
               BEST VALUE
             </div>
-            <p style={{ margin: "0 0 4px", fontSize: 11, color: "#2d6a4f", textTransform: "uppercase", letterSpacing: 1 }}>Bundle</p>
+            <p style={{ margin: "0 0 4px", fontSize: 11, color: "#2563eb", textTransform: "uppercase", letterSpacing: 1 }}>Bundle</p>
             <p style={{ margin: "0 0 4px", fontSize: 28, fontWeight: 900, color: "#f0ebe3" }}>$4.99</p>
-            <p style={{ margin: 0, fontSize: 11, color: "#2d6a4f" }}>Che AF + Mix-R</p>
+            <p style={{ margin: 0, fontSize: 11, color: "#2563eb" }}>Che AF + Mix-R</p>
           </div>
         </div>
 
         {/* CTA */}
         <button type="button" onClick={onGetAccess}
-          style={{ width: "100%", padding: 16, borderRadius: 14, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 800, fontSize: 17, cursor: "pointer", boxShadow: "0 8px 24px rgba(45,106,79,0.4)", marginBottom: 12 }}>
+          style={{ width: "100%", padding: 16, borderRadius: 14, border: "none", background: "#2563eb", color: "#fff", fontWeight: 800, fontSize: 17, cursor: "pointer", boxShadow: "0 8px 24px rgba(45,106,79,0.4)", marginBottom: 12 }}>
           🍹 Get Mix-R Access
         </button>
 

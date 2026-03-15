@@ -30,7 +30,7 @@ export default function Shelf({ shelf, setShelf }) {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
         <h2 style={{ margin: 0, fontSize: 18, color: "#f0ebe3" }}>🍶 My Shelf</h2>
         <button type="button" onClick={() => setShowScanner(true)}
-          style={{ padding: "8px 14px", borderRadius: 10, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 600, fontSize: 13, cursor: "pointer" }}>
+          style={{ padding: "8px 14px", borderRadius: 10, border: "none", background: "#2563eb", color: "#fff", fontWeight: 600, fontSize: 13, cursor: "pointer" }}>
           📸 Scan Shelf
         </button>
       </div>
@@ -43,7 +43,7 @@ export default function Shelf({ shelf, setShelf }) {
             placeholder="Add bottle or mixer…"
             style={{ flex: 1, padding: "10px 14px", borderRadius: 10, border: "1px solid #333", background: "#111", color: "#f0ebe3", fontSize: 14, outline: "none", fontFamily: "inherit" }} />
           <button type="button" onClick={addItem}
-            style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: "#2d6a4f", color: "#fff", fontWeight: 700, cursor: "pointer" }}>
+            style={{ padding: "10px 16px", borderRadius: 10, border: "none", background: "#2563eb", color: "#fff", fontWeight: 700, cursor: "pointer" }}>
             +
           </button>
         </div>
@@ -57,7 +57,7 @@ export default function Shelf({ shelf, setShelf }) {
       <div style={{ display: "flex", gap: 6, overflowX: "auto", marginBottom: 16, paddingBottom: 4 }}>
         {CATEGORIES.map(c => (
           <button key={c} type="button" onClick={() => setFilterCat(c)}
-            style={{ padding: "6px 12px", borderRadius: 50, border: `1px solid ${filterCat === c ? "#2d6a4f" : "#333"}`, background: filterCat === c ? "rgba(45,106,79,0.2)" : "transparent", color: filterCat === c ? "#2d6a4f" : "#718096", fontSize: 12, fontWeight: filterCat === c ? 700 : 400, whiteSpace: "nowrap", cursor: "pointer" }}>
+            style={{ padding: "6px 12px", borderRadius: 50, border: `1px solid ${filterCat === c ? "#2563eb" : "#333"}`, background: filterCat === c ? "rgba(45,106,79,0.2)" : "transparent", color: filterCat === c ? "#2563eb" : "#718096", fontSize: 12, fontWeight: filterCat === c ? 700 : 400, whiteSpace: "nowrap", cursor: "pointer" }}>
             {c}
           </button>
         ))}
