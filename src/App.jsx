@@ -162,7 +162,7 @@ export default function App() {
   if (authLoading || subLoading) return (
     <div style={{ minHeight: "100vh", background: "#0d0d0d", display: "flex", alignItems: "center", justifyContent: "center" }}>
       <div style={{ textAlign: "center" }}>
-        <div style={{ fontSize: 64, marginBottom: 16 }}>🍹</div>
+        <img src="/icon-192.png" alt="Mix-R" style={{ width: 80, height: 80, borderRadius: 16, marginBottom: 16 }} />
         <div style={{ width: 36, height: 36, border: "3px solid #333", borderTopColor: "#2563eb", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto" }} />
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
@@ -197,7 +197,7 @@ export default function App() {
         {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ fontSize: 28 }}>🍹</span>
+            <img src="/icon-192.png" alt="Mix-R" style={{ width: 36, height: 36, borderRadius: 8 }} />
             <div>
               <h1 style={{ margin: 0, fontSize: 22, color: "#f0ebe3" }}>Mix-R</h1>
               <p style={{ margin: 0, fontSize: 12, color: "#718096" }}>
