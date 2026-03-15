@@ -158,6 +158,7 @@ export default function LandingPage({ onGetStarted }) {
       <nav className={`nav-fixed ${scrolled ? "nav-scrolled" : ""}`}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <img src="/icon-192.png" alt="Mix-R" style={{ width: 32, height: 32, borderRadius: 8 }} />
+          <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700, fontSize: 20, color: "#f0ebe3" }}>Mix-R</span>
           <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700, fontSize: 20, color: "#f0ebe3" }}>
 
           </span>
