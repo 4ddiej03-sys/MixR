@@ -1,0 +1,80 @@
+[
+  {
+    "id": "mojito-classic",
+    "title": "Classic Mojito",
+    "category": "Cocktail",
+    "origin": "Cuba",
+    "difficulty": "Easy",
+    "prepTime": "5 mins",
+    "servings": 1,
+    "alcoholic": true,
+    "ingredients": ["60ml white rum", "1 lime", "10 fresh mint leaves", "2 tsp sugar", "soda water", "ice"],
+    "steps": ["Muddle mint leaves and sugar in a glass.", "Squeeze in lime juice and add lime halves.", "Fill glass with ice.", "Pour over rum and top with soda water.", "Stir gently and garnish with mint sprig."],
+    "tags": ["refreshing", "summer", "classic"]
+  },
+  {
+    "id": "margarita-classic",
+    "title": "Classic Margarita",
+    "category": "Cocktail",
+    "origin": "Mexico",
+    "difficulty": "Easy",
+    "prepTime": "5 mins",
+    "servings": 1,
+    "alcoholic": true,
+    "ingredients": ["60ml tequila", "30ml triple sec", "30ml lime juice", "salt", "ice", "lime wedge"],
+    "steps": ["Salt the rim of a chilled glass.", "Combine tequila, triple sec and lime juice in a shaker with ice.", "Shake well for 15 seconds.", "Strain into prepared glass over fresh ice.", "Garnish with lime wedge."],
+    "tags": ["classic", "citrus", "party"]
+  },
+  {
+    "id": "negroni",
+    "title": "Negroni",
+    "category": "Cocktail",
+    "origin": "Italy",
+    "difficulty": "Easy",
+    "prepTime": "3 mins",
+    "servings": 1,
+    "alcoholic": true,
+    "ingredients": ["30ml gin", "30ml sweet vermouth", "30ml Campari", "orange peel", "ice"],
+    "steps": ["Fill glass with ice.", "Pour gin, vermouth and Campari over ice.", "Stir for 30 seconds until chilled.", "Express orange peel over glass and use as garnish."],
+    "tags": ["bitter", "classic", "Italian"]
+  },
+  {
+    "id": "virgin-mojito",
+    "title": "Virgin Mojito",
+    "category": "Mocktail",
+    "origin": "Cuba",
+    "difficulty": "Easy",
+    "prepTime": "5 mins",
+    "servings": 1,
+    "alcoholic": false,
+    "ingredients": ["1 lime", "10 fresh mint leaves", "2 tsp sugar", "soda water", "ice"],
+    "steps": ["Muddle mint leaves and sugar in a glass.", "Squeeze in lime juice and add lime halves.", "Fill glass with ice.", "Top with soda water.", "Stir gently and garnish with mint sprig."],
+    "tags": ["refreshing", "non-alcoholic", "summer"]
+  },
+  {
+    "id": "teh-tarik",
+    "title": "Teh Tarik",
+    "category": "Traditional",
+    "origin": "Malaysia",
+    "difficulty": "Medium",
+    "prepTime": "10 mins",
+    "servings": 2,
+    "alcoholic": false,
+    "ingredients": ["4 tsp black tea", "4 tsp condensed milk", "2 tsp evaporated milk", "500ml boiling water"],
+    "steps": ["Brew black tea in boiling water for 3 minutes.", "Strain into a tall cup.", "Add condensed milk and evaporated milk.", "Pour mixture between two cups from a height to create froth.", "Repeat 3-4 times until frothy and serve hot."],
+    "tags": ["traditional", "non-alcoholic", "hot", "Asian"]
+  },
+  {
+    "id": "espresso-martini",
+    "title": "Espresso Martini",
+    "category": "Cocktail",
+    "origin": "United Kingdom",
+    "difficulty": "Medium",
+    "prepTime": "5 mins",
+    "servings": 1,
+    "alcoholic": true,
+    "ingredients": ["50ml vodka", "30ml coffee liqueur", "30ml fresh espresso", "ice", "3 coffee beans"],
+    "steps": ["Brew a fresh espresso and let cool slightly.", "Add vodka, coffee liqueur and espresso to a shaker with ice.", "Shake vigorously for 15 seconds until frothy.", "Double strain into a chilled martini glass.", "Garnish with 3 coffee beans."],
+    "tags": ["coffee", "party", "after-dinner"]
+  }
+]
