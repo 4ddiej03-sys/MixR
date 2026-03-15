@@ -157,9 +157,9 @@ export default function LandingPage({ onGetStarted }) {
       {/* Nav */}
       <nav className={`nav-fixed ${scrolled ? "nav-scrolled" : ""}`}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ fontSize: 28 }}>🍹</span>
+          <img src="/icon-192.png" alt="Mix-R" style={{ width: 32, height: 32, borderRadius: 8 }} />
           <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700, fontSize: 20, color: "#f0ebe3" }}>
-            Mix-<em style={{ color: "#2563eb", fontStyle: "italic" }}>R</em>
+
           </span>
         </div>
         <button className="cta-btn" onClick={onGetStarted} style={{ padding: "10px 24px", fontSize: 13 }}>
@@ -351,9 +351,9 @@ export default function LandingPage({ onGetStarted }) {
       {/* Footer */}
       <footer style={{ borderTop: "1px solid rgba(240,235,227,0.06)", padding: "40px 24px", textAlign: "center", position: "relative", zIndex: 1 }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 16 }}>
-          <span style={{ fontSize: 24 }}>🍹</span>
+          <img src="/icon-192.png" alt="Mix-R" style={{ width: 28, height: 28, borderRadius: 6 }} />
           <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700, fontSize: 18, color: "#f0ebe3" }}>
-            Mix-<em style={{ color: "#2563eb" }}>R</em>
+
           </span>
         </div>
         <div style={{ display: "flex", gap: 24, justifyContent: "center", marginBottom: 16, flexWrap: "wrap" }}>

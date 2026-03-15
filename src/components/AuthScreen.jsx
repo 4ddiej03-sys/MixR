@@ -76,7 +76,6 @@ export default function AuthScreen({ onAuth }) {
         {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: 28 }}>
           <img src="/icon-192.png" alt="Mix-R" style={{ width: 80, height: 80, borderRadius: 16, marginBottom: 8 }} />
-          <h1 style={{ margin: 0, fontSize: 32, fontWeight: 900, color: "#f0ebe3" }}>Mix-R</h1>
           <p style={{ margin: "4px 0 0", fontSize: 14, color: "#718096" }}>Shake What You've Got</p>
         </div>
 

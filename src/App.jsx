@@ -199,7 +199,6 @@ export default function App() {
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <img src="/icon-192.png" alt="Mix-R" style={{ width: 36, height: 36, borderRadius: 8 }} />
             <div>
-              <h1 style={{ margin: 0, fontSize: 22, color: "#f0ebe3" }}>Mix-R</h1>
               <p style={{ margin: 0, fontSize: 12, color: "#718096" }}>
                 {syncing ? "☁️ Syncing…" : user.email.split("@")[0]}
               </p>
