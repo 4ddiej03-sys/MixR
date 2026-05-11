@@ -1,7 +1,7 @@
 // components/LandingPage.jsx
 import { useState, useEffect } from "react";
 
-const EXPIRY_DATE = new Date("2026-04-13T23:59:59");
+const EXPIRY_DATE = new Date("2026-05-18T23:59:59");
 
 const FEATURES = [
   { icon: "📸", title: "Scan Your Shelf", desc: "Point your camera at your bar cabinet. AI identifies every bottle, mixer and garnish instantly." },
@@ -150,7 +150,7 @@ export default function LandingPage({ onGetStarted }) {
       {/* Announcement bar */}
       <div className="pioneer-bar">
         <p className="body-font" style={{ fontSize: 13, color: "#fff", fontWeight: 500 }}>
-          🌟 First 30 users get <strong>Pro FREE forever</strong> + Pioneer badge — <strong>limited spots left</strong>
+          🔥 Only <strong>28 spots left</strong> — Pioneer offer closes in
         </p>
       </div>
 
@@ -209,7 +209,7 @@ export default function LandingPage({ onGetStarted }) {
         </div>
         <p className={`body-font hero-fade-in delay-4 ${visible ? "visible" : ""}`}
           style={{ marginTop: 20, fontSize: 13, color: "rgba(240,235,227,0.35)" }}>
-          No credit card · Free forever for first 30 users · Works on any device
+          No credit card · 28 spots remaining · Offer closes May 18
         </p>
 
         {/* Shelf circle — hidden on mobile */}
@@ -336,7 +336,7 @@ export default function LandingPage({ onGetStarted }) {
             Shake what<br /><em style={{ color: "#2d6a4f", fontStyle: "italic" }}>you've got.</em>
           </h2>
           <p className="body-font" style={{ fontSize: 16, color: "rgba(240,235,227,0.5)", marginBottom: 40, lineHeight: 1.7 }}>
-            Join the first 30 users and lock in Pro free forever.<br />
+            Only 28 spots remain. After that, Pro is $2.99 NZD/month.<br />
             No credit card. No commitment. Just great drinks.
           </p>
           <button className="cta-btn cta-btn-lg" onClick={onGetStarted} style={{ fontSize: 18, padding: "20px 56px" }}>
