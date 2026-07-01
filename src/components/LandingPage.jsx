@@ -188,18 +188,7 @@ export default function LandingPage({ onGetStarted }) {
           No credit card · Works on any device
         </p>
 
-        {/* Shelf circle — hidden on mobile */}
-        <div className="shelf-circle" style={{
-          position: "absolute", top: 180, right: 0, width: 140, height: 140,
-          borderRadius: "50%", border: "1px solid rgba(37,99,235,0.3)",
-          flexDirection: "column", alignItems: "center", justifyContent: "center",
-          textAlign: "center", background: "rgba(37,99,235,0.06)", backdropFilter: "blur(8px)",
-        }}>
-          <span style={{ fontSize: 28 }}>🌟</span>
-          <span className="body-font" style={{ fontSize: 11, color: "#2563eb", fontWeight: 500, marginTop: 4, lineHeight: 1.3 }}>
-            Pioneer<br />Member<br />Perks
-          </span>
-        </div>
+        
       </section>
 
       {/* Big quote */}
