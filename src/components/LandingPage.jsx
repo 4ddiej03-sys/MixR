@@ -171,25 +171,7 @@ export default function LandingPage({ onGetStarted }) {
         </h1>
         <div className="divider-line" style={{ margin: "32px 0" }} />
 
-        {/* Countdown */}
-        <div className={`hero-fade-in delay-2 ${visible ? "visible" : ""}`}>
-          <p className="body-font" style={{ fontSize: 13, color: "#2563eb", fontWeight: 500, marginBottom: 12, letterSpacing: 1, textTransform: "uppercase" }}>
-            🌟 Pioneer offer expires in
-          </p>
-          <div className="countdown-box">
-            {[
-              { val: countdown.days,  label: "Days" },
-              { val: countdown.hours, label: "Hours" },
-              { val: countdown.mins,  label: "Mins" },
-              { val: countdown.secs,  label: "Secs" },
-            ].map((u, i) => (
-              <div key={i} className="countdown-unit">
-                <span className="countdown-num">{String(u.val).padStart(2, "0")}</span>
-                <span className="countdown-label">{u.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+      
 
         <p className={`body-font hero-fade-in delay-2 ${visible ? "visible" : ""}`}
           style={{ fontSize: 18, color: "rgba(240,235,227,0.65)", lineHeight: 1.7, maxWidth: 520, marginBottom: 40 }}>
@@ -203,7 +185,7 @@ export default function LandingPage({ onGetStarted }) {
         </div>
         <p className={`body-font hero-fade-in delay-4 ${visible ? "visible" : ""}`}
           style={{ marginTop: 20, fontSize: 13, color: "rgba(240,235,227,0.35)" }}>
-          No credit card · 28 spots remaining · Offer closes May 18
+          No credit card · Works on any device
         </p>
 
         {/* Shelf circle — hidden on mobile */}
@@ -330,8 +312,8 @@ export default function LandingPage({ onGetStarted }) {
             Shake what<br /><em style={{ color: "#2563eb", fontStyle: "italic" }}>you've got.</em>
           </h2>
           <p className="body-font" style={{ fontSize: 16, color: "rgba(240,235,227,0.5)", marginBottom: 40, lineHeight: 1.7 }}>
-            Only 28 spots remain. After that, Pro is $2.99 NZD/month.<br />
-            No credit card. No commitment. Just great drinks.
+            Enjoy the limited AI for FREE or Pro is $2.99 NZD/month.<br />
+            No commitment. Just great drinks.
           </p>
           <button className="cta-btn cta-btn-lg" onClick={onGetStarted} style={{ fontSize: 18, padding: "20px 56px" }}>
             🍹 Get Started — It's Free
