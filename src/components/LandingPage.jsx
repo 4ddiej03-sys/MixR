@@ -147,13 +147,7 @@ export default function LandingPage({ onGetStarted }) {
         }
       `}</style>
 
-      {/* Announcement bar */}
-      <div className="pioneer-bar">
-        <p className="body-font" style={{ fontSize: 13, color: "#fff", fontWeight: 500 }}>
-          🔥 Only <strong>28 spots left</strong> — Pioneer offer closes in
-        </p>
-      </div>
-
+     
       {/* Nav */}
       <nav className={`nav-fixed ${scrolled ? "nav-scrolled" : ""}`}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
