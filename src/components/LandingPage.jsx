@@ -39,7 +39,7 @@ function useCountdown(target) {
 }
 
 export default function LandingPage({ onGetStarted }) {
-  const [scrolled, setScrolled] = useState(false);
+ 
   const [visible, setVisible]   = useState(false);
   const countdown = useCountdown(EXPIRY_DATE);
 
@@ -149,7 +149,7 @@ export default function LandingPage({ onGetStarted }) {
 
      
       {/* Nav */}
-      <nav className={`nav-fixed ${scrolled ? "nav-scrolled" : ""}`}>
+      <nav style={{ padding: "0 24px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid rgba(196,98,45,0.2)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ fontSize: 28 }}>🍹</span>
           <span style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700, fontSize: 20, color: "#f0ebe3" }}>
@@ -162,7 +162,7 @@ export default function LandingPage({ onGetStarted }) {
       </nav>
 
       {/* Hero */}
-      <section className="hero-section" style={{ padding: "180px 24px 100px", maxWidth: 900, margin: "0 auto", position: "relative", zIndex: 1 }}>
+      <section className="hero-section" style={{ padding: "80px 24px 100px", maxWidth: 900, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div className={`hero-fade-in ${visible ? "visible" : ""}`}>
           <div className="badge-pill">Shake What You've Got</div>
         </div>
