@@ -324,7 +324,7 @@ export default function LandingPage({ onGetStarted }) {
         <div style={{ display: "flex", gap: 24, justifyContent: "center", marginBottom: 16, flexWrap: "wrap" }}>
           <button className="legal-link">Terms of Service</button>
           <button className="legal-link">Privacy Policy</button>
-          <a href="mailto:support@mix-r.vercel.app" className="legal-link" style={{ textDecoration: "underline" }}>Contact</a>
+          <a href="mailto:4dddiej03@gmail.com" className="legal-link" style={{ textDecoration: "underline" }}>Contact</a>
           <a href="https://che-af.vercel.app" className="legal-link" style={{ textDecoration: "underline", color: "#c4622d" }}>🍳 Che AF</a>
         </div>
         <p className="body-font" style={{ fontSize: 12, color: "rgba(240,235,227,0.2)" }}>
